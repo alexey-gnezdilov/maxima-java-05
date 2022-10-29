@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список котов</title>
+</head>
+<body>
+<div>
+    <h1>Список котов</h1>
+    <ul>
+        <#list cats as cat>
+        <li>
+            <p>${cat_index + 1}. ${cat.name}  ${cat.weight} kg</p>
+            <a href="${cat.link}">Link</a><br>
+            <img src="${cat.picture}">
+        </li>
+    </#list>
+    </ul>
+</div>
+</body>
+</html>
